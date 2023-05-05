@@ -15,9 +15,9 @@ generic
       procedure Suprimir(Arbol: in out TipoArbol; ValSup: in TipoElem);
       function Esta(Raiz: in TipoArbol; Buscado: in TipoElem) return Boolean; -- Busca si elemento se encuentra
       procedure Limpiar(Ptr: in out TipoArbol);
-      function Izq(Ptr: TipoArbol) return TipoArbol;
-      function Der(Ptr: TipoArbol) return TipoArbol;
-      function Info(Ptr: Tipoarbol) return Tipoelem;
+      function Izq(Ptr: TipoArbol) return TipoArbol; -- Devulve un puntero del nodo raiz del arbol izquierdo
+      function Der(Ptr: TipoArbol) return TipoArbol; -- Devuelve un puntero del nodo raiz del arbol derecho
+      function Info(Ptr: Tipoarbol) return Tipoelem; -- 
       
 	  Arbolvacio: exception;
    
