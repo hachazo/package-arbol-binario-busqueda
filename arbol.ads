@@ -17,7 +17,7 @@ generic
       procedure Limpiar(Ptr: in out TipoArbol);
       function Izq(Ptr: TipoArbol) return TipoArbol; -- Devulve un puntero del nodo raiz del arbol izquierdo
       function Der(Ptr: TipoArbol) return TipoArbol; -- Devuelve un puntero del nodo raiz del arbol derecho
-      function Info(Ptr: Tipoarbol) return Tipoelem; -- 
+      function Info(Ptr: Tipoarbol) return Tipoelem; -- Imprime el elemento que esta en la raiz del arbol.
       
 	  Arbolvacio: exception;
    
@@ -32,3 +32,6 @@ generic
    end record;
    
 end arbol;
+--package Arbolinc is new Arbol(Integer,"<", ">",temp);
+-- use Arbolinc;
+-- arbol:tipoarbol;
